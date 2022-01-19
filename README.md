@@ -45,10 +45,6 @@ git clone https://github.com/PanicKernal/langswap.git
 ```
 - Add a 'data-lang-control' attribute to each dropdown element containing the language toggle. Assign an integer string indicating order of precedence. '1' should be the first and default language.
 ```
-<h1 data-lang="1">Translator Tests</h1>
-<h1 data-lang="2">Тесты переводчиков</h1>
-<h1 data-lang="3">Pruebas de traductora</h1>
-
 <select class="lang-control">
   <option data-lang-control="1">English</option>
   <option data-lang-control="2">Russian</option>
@@ -57,6 +53,10 @@ git clone https://github.com/PanicKernal/langswap.git
 ```
 - - Add a 'data-lang' attribute to each element containing language you want to swap translations. Assign an integer string indicating order of precedence. '1' should be the first and default language.
 ```
+<h1 data-lang="1">Translator Tests</h1>
+<h1 data-lang="2">Тесты переводчиков</h1>
+<h1 data-lang="3">Pruebas de traductora</h1>
+
 <p data-lang="1">
   This will test the library's capability to switch text seamlessly.
 </p>
@@ -73,6 +73,7 @@ git clone https://github.com/PanicKernal/langswap.git
 ```
 <h1 data-lang="1" data-lang-display='flex'>Translator Tests</h1>
 <h1 data-lang="2" data-lang-display='contents'>Тесты переводчиков</h1>
+
 <p data-lang="1" data-lang-display='grid'>
   This will test the library's capability to switch text seamlessly.
 </p>
